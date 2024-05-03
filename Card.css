@@ -1,0 +1,23 @@
+.title{
+    padding: 20px 20px;
+    color: white;
+    background-color: rgb(49, 47, 47);
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: solid;
+    font-size: 30px;
+    text-align: center ;
+    font-weight: bold;
+}
+.prop{
+    margin: 15px;
+    border: 2px solid black;
+    padding: 25px 25px;
+    gap: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap:wrap;
+}
+p{
+    padding: 20px 20px;
+
+}

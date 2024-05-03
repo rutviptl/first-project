@@ -1,0 +1,11 @@
+.footer{
+    color: white;
+    background-color: rgb(49, 47, 47);
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 30px 30px;
+    display: flex;
+    width: 100%;
+    border: 10px solid black;
+    bottom: 0;
+    
+}
