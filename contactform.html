@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+</head>
+<style>
+    *{
+      margin: 25px 40px ;
+      padding: 10px; 
+      box-sizing: content-box;  
+      font-family: 'Times New Roman', Times, serif;
+    }
+    body{
+        padding: 12px 15px 12px 15px;
+        background-color: rgb(212, 213, 216);
+        border: 1px solid ; 
+        border-color:grey; 
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .class{
+        width: 95%;
+        padding: 1px;
+        border-radius: 2px;
+        color: black;
+        background-color: rgb(188, 189, 190);
+    }
+    input[type="text"],input[type="email"],textarea{
+        padding: 5px;
+        width: 90%;
+      height: auto;
+    }  
+    div{
+        background-color: rgb(49, 180, 100);
+        color: white;
+        text-align: left;
+        padding: 10px ;
+        width: 90%;
+      height: auto;
+    }
+    input[type="submit"] {
+        background-color: rgb(49, 180, 100);
+        color: white;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        width: 90%;
+      height: auto;
+        font-weight: bold;
+    }
+    input[type="submit"]:hover {
+         background-color: rgb(73, 201, 48);
+    }
+</style>
+<script type = "text/javascript">
+    <!--
+       // Form validation code will come here.
+       function validate() {
+       
+          if( document.myForm.Name.value == "" ) {
+             alert( "Please provide your name!" );
+             document.myForm.Name.focus() ;
+             return false;
+          }
+          if( document.myForm.EMail.value == "" ) {
+             alert( "Please provide your Email!" );
+             document.myForm.EMail.focus() ;
+             return false;
+          }
+          return( true );
+      }
+   //-->
+</script>
+<body>
+    <div>
+   <p><h1> CONTACT FORM</h1></p>
+<p> <h3>Please fill all text in form.</h3></p>
+</div>  
+<form name="myform" onsubmit="return(validate());">
+<h2 class="class"><p>Your name :</p>
+    <p><input type="text" name="name" id="name" placeholder="enter your full name here"> </p>
+
+    <p>Your email:</p>
+    <p><input type="email" name="email" id="email" placeholder="enter your email address"></p>
+    <p>Msg:</p>
+    <p><input type="textarea" rows="100%" cols="100%" placeholder="please enter your message here"></p>
+    <p>Subject:</p>
+  <p><input type="text" name="subject" id="subject" placeholder="job inquiry in branch"></p>
+  <p>City:
+    <select name="city">
+     <option value1="CITY">enter your city</option>
+     <option value2="vadodra">VADODRA</option>
+      <option value3="valsad">VAlSAD</option>
+      <option value4="vasad">VASAD</option>
+      <option value5="surat">SURAT</option> 
+  </select></p>
+</h2>
+<input type="submit" value="Send">
+</form>
+</body>
+</html>
