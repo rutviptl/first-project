@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+   <link rel="stylesheet" href="formcss.css">
+</head>
+<body>
+    <form action="/cwhform.php/" method="post">
+        
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/013/948/616/small/bank-icon-logo-design-vector.jpg"  alt="no image" align="right" width="150px" height="110px" style="background-attachment: scroll; border:2px solid ;border-color: rgb(187, 187, 187);border-radius:100% ;">
+         <br>
+         <h1 class="cla"><b> Customer Information</b></h1><hr>
+         <p>Name* :<br></p><p><input type="text" name="name" placeholder="RUTVI PATEL"> </p>
+         <p>age* :<br></p><p><input type="number" placeholder="34" required></p>
+         <fieldset>
+           <legend>gender</legend>
+            <p>MALE<input type="radio" name="gender"  value="MALE" required> FEMALE <input type="radio" name="gender" value="FEMALE" required></p>
+         </fieldset>
+         <p>ADDRESS :<br></p><p><textarea name="address" id="address" placeholder="CITY, DISTRICT, STATE, COUNTRY"  cols="100" rows="100"></textarea>
+         <p>email* :<br></p><p><input type="email" name="email" id="email" placeholder="xyz12@gmail.com"></p>
+         <p>date of birth* :</p><br><p></h2><input type="date" required></p>
+         
+         <p><h2 id="idname"></h2><b>Payment information</b></h2></p>
+         <p>card type: <br></p>
+           <p> <select name="cardtype" id="cardtype">
+              <option value="">--select a card type--</option>
+               <option value="visa card" >visa</option>
+               <option value="mastercard" >master</option>
+               <option value="googlepay" >googlepay</option>
+              </select>
+         </p>
+         <p>card no:<br> </p><p><input type="number" name="cardnumber" id="cardnumber" placeholder="1111-2222-3333-4444"></p>
+         <p>CVV:<br> </p><p><input type="password" name="cvv" id="cvv" placeholder="123"></p>
+        <p> <input type="submit" value="PAYNOW"></p>
+
+      </form>
+       
+</body>
+</html>
