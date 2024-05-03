@@ -1,0 +1,9 @@
+.cards{
+    display: flex;
+    flex-wrap: nowrap;
+}
+@media (max-width: 480px) {
+    .cards{
+        display: block;
+    }
+}
